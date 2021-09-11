@@ -1,0 +1,114 @@
+html, body {
+   margin: auto;
+   padding: auto;
+   font-family: 'Open Sans', sans-serif;
+   background-color: #EFEFEF;
+   line-height: 150%;
+   box-sizing: border-box;
+}
+
+.s-top {
+   max-width: 840px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.preview-img {
+max-width: 100%;
+}
+
+.preview-block {
+   padding-top: 32px;
+}
+
+nav {
+   margin-top: 32px;
+   margin-bottom: 48px;
+   box-sizing: border-box;
+   height: 22px;
+}
+
+img {
+   border:none;
+}
+
+.nav_left {
+   width: 50%;
+   float: left;
+}
+
+.nav_right {
+   width: 50%;
+   float: right;
+}
+
+.Portfolio {
+   float: left;
+}
+
+.About {
+   float: left;
+}
+
+.Ru {
+   float: right;
+}
+
+.Eng {
+   float: right;
+}
+
+.nav_right a{
+   padding-left: 16px;
+   padding-right: 0px;
+}
+
+.preview-description {
+   margin-top: 14px;
+}   
+
+
+footer {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 48px;
+   height: 80px;
+   padding-top:32px;
+   box-sizing: border-box;
+}
+
+
+a{
+color: #211F1F;
+font-size: 16px;
+text-decoration:none;
+padding-right: 1rem;
+-webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+     text-decoration: none;
+     color: #0000FF;
+}
+
+@media (min-width:960px) {
+   .s-top {
+      width: 50%;
+   }
+}
+
+@media (max-width:960px) {
+   .s-top {
+      max-width:900px;
+      padding-left: 32px;
+      padding-right: 32px;
+   }
+}
+
+@media (max-width:420px) {
+   .s-top {
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+}
+

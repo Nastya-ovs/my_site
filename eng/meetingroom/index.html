@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+	<title>Anastasiya Ovsyannikova - Meeting rooms</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<section class="s-top">
+<nav>
+	<div class="nav_left">
+		<div class="Portfolio"><a href="http://nastyaovsyannikova.ru/eng">Portfolio</a></div>
+		<div class="About"><a href="http://nastyaovsyannikova.ru/eng">About me</a></div>
+	</div>
+	<div class="nav_right">
+		<div class="Ru"><a href="http://nastyaovsyannikova.ru/peregovorky/">Ru</a></div>
+		<div class="Eng"><a href="http://nastyaovsyannikova.ru/eng/meetingroom/">Eng</a></div>
+	</div>
+</nav>
+<h1>Meeting rooms</h1>
+<p class="first-p">In this project, it was necessary to change the old functionality for booking meeting rooms to a new, more user-friendly one. We conducted an interview with users at the beginning of work on the project and collected the main shortcomings of the current system</p>
+</section>
+<section class="first-image">
+	<img src="pct_main.png">
+</section>
+<section class="s-content">
+	<div class="div-content">
+	<h2>Problems</h2>
+	<p>Users noted the following issues during the interview:</p>
+	<ol>
+		<li>If the meeting time has already passed, you can’t see the detailed information on it</li>
+		<li>Cannot see employee schedule</li>
+		<li>No adaptive mobile version</li>
+		<li>Users do not understand how to enable the calendar and switch between dates using the arrows
+		</li>
+		<li>Only one user can be invited to a meeting</li>
+	</ol>
+	</div>
+	<img class="all-img" src="pct_2.png">
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Filters</h2>
+	<p>In total, the company has 16 meeting rooms, each with its own capacity and equipment. To find out the equipment of the meeting room or its capacity in the current interface, you need to view additional information under the question icon. This is time-consuming. </p>
+	<p>First, filters were added, with which you can immediately specify the necessary parameters and see all suitable meeting rooms</p>
+	</div>
+	<img class="all-img" src="pct_3.png">
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Date picker</h2>
+	<p>Since users encountered difficulties switching dates in the old interface, it was necessary to simplify this process in the new functionality</p>
+	<p>The panel with the nearest dates for the month appeared in the header so that you can switch between them with one click</p>
+	</div>
+	<img class="all-img" src="pct_4.png">
+	<div class="div-content">
+	<p>If the user needs to make an appointment for a more distant date, or if he is more used to using the calendar, then the usual calendar opens when you click on the date near the filters</p>
+    </div>
+	<img class="all-img" src="pct_5.png">
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Scheduler</h2>
+	<p>It became clear at the first stages of collecting feedback that people needed functionality to view the personal schedule of all invited employees and the selected meeting room in order to choose a convenient time for a meeting</p>
+	<p>The scheduler himself appears when creating a meeting, if there is a conflict due to the time of the invited employees</p></div>
+	<img class="all-img" src="pct_6.png">
+	<div class="div-content">
+	<p>The functionality of the scheduler repeats the functionality of the popup. Here you can change the date and time of the meeting, the participants of the meeting or choose another meeting room</p></div>
+	<img class="all-img" src="pct_7.png">
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Meeting details</h2>
+	<p>We also fixed the display of meeting information. In the new layout you can see the details even if the meeting is over, the creator of the meeting is also always visible</p>
+	</div>
+	<img class="all-img" src="pct_8.png">
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Mobile version</h2>
+	<p>Convenient mobile version was designed</p>
+	</div>
+	<img class="all-img" src="pct_9.png">
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Testing</h2>
+	<p>Testing after the changes was conducted on 15 users. There were two scenarios in total that covered all the new functionality. Key questions were:</p>
+	<ol>
+		<li>Does everyone understand how to switch the date on the new panel?</li>
+		<li>How to enable the scheduler and why is it needed?</li>
+		<li>Will users use filters?</li>
+	</ol>
+	</div>
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Results</h2>
+	<p>According to the test results, it turned out that users quickly find filters and switch the date on a new panel. All interface improvements were rated as positive. But there were remarks:</p>
+	<ol>
+		<li>The test users did not see that there was a conflict when creating the meeting, and those who saw did not understand what this means</li>
+		<li>How to enable the scheduler and why is it needed?</li>
+		<li>Most users expressed a desire to be able to save a meeting, even if the user is busy at this time. Because some meetings are more important than others</li>
+	</ol>
+	</div>
+</section>
+<section class="s2-content">
+	<div class="div-content">
+	<h2>Improvements</h2>
+	<p>The popup for creating the meeting has been redesigned. I added a banner that explains in detail why the conflict arose and what needs to be done in the future. The meeting can now be saved even in case of conflict</p>
+</div>
+	<img class="all-img" src="pct_10.png">
+	<div class="div-content">
+	<p>The user's schedule view has been redesigned with several appointments at once. Responses are loaded into the user’s scheduler for a meeting from Outlook and can have 3 states:</p></div>
+    <div class="super-container">
+	<div class="buble-conteiner">
+	<div class="bubbles" id="bubble_1">
+		<div id="time_1">15:00-13:30</div>
+		<div id="name_1">Design meeting</div>
+	</div>
+	<span class="description">
+		Meeting accepted
+	</span>
+	</div>
+	<div class="buble-conteiner">
+	<div class="bubbles" id="bubble_2">
+		<div id="time_2">15:00-13:30</div>
+		<div id="name_2">Design meeting</div>
+	</div>
+	<span class="description">
+		Selected «Questionable»
+	</span>
+</div>
+	<div class="buble-conteiner">
+	<div class="bubbles" id="bubble_3">
+		<div id="time_3">15:00-13:30</div>
+		<div id="name_3">Design meeting</div>
+	</div>
+	<span class="description">
+		No decision on the meeting
+	</span>
+</div>
+</div>
+<img class="last-img" src="pct_11.png">
+<footer>
+    <a href="https://dribbble.com/Nastyaweb" target="_blank">Dribble</a>
+    <a href="https://www.behance.net/nastyaweb" target="_blank">Behance</a>
+    <a href="https://www.instagram.com/anastasiya_ovs_/?hl=ru" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank">Linkedln</a>
+</footer>
+</section>
+</body>
+</html>
